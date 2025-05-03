@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 950px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:first-child {
+    --card-color: hsl(31, 77%, 52%);
+}
+
+.card:first-child+.card {
+    --card-color: hsl(184, 100%, 22%);
+}
+
+.card:last-child {
+    --card-color: hsl(179, 100%, 13%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--card-color);
+}
+
+.card_top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon {
+    width: fit-content;
+}
+
+.title {
+    color: hsl(0, 0%, 95%);
+    font-size: 32px;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+.text {
+    min-height: 150px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: fit-content;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 20px;
+    color: var(--card-color);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 100px;
+    border: 3px solid hsl(0, 0%, 95%);
+    font-size: 18px;
+    transition: .5s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--card-color);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width:945px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .card>button {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:899px) {
+    .card {
+        padding: 30px;
+    }
+
+    .card>button {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:833px) {
+    .card {
+        padding: 25px;
+    }
+
+    .card_top {
+        gap: 20px;
+    }
+
+    .icon {
+        width: 50px;
+    }
+}
+
+@media(max-width:799px) {
+    .card {
+        padding: 20px;
+    }
+}
+
+@media(max-width:766px) {
+    body {
+        padding: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text {
+        min-height: 100px;
+    }
+}
+
+@media(max-width:384px) {
+    .card_top {
+        gap: 30px;
+    }
+
+    .text {
+        font-size: 12px;
+        min-height: 150px;
+    }
+
+}
