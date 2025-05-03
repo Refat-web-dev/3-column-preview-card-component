@@ -80,5 +80,5 @@ I'm not sure if using min-height: 150px; for .text is the best solution here.
 ## Author
 
 - Telegram - [Refat Islyamov](https://t.me/Refat_web_dev)
-- Frontend Mentor - [@refabatya](https://medium.com/@refabatya)
+- Frontend Mentor - [@Refat-web-dev](https://www.frontendmentor.io/profile/Refat-web-dev)
 - Kinoarea - [Movie website](kinoarea-vite.netlify.app)

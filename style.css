@@ -59,10 +59,10 @@ body {
 }
 
 .text {
-    min-height: 150px;
+    min-height: 170px;
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
-    line-height: 20px;
+    line-height: 22px;
     font-family: "Lexend Deca", sans-serif;
 }
 
